@@ -50,6 +50,10 @@
     font-size: 25px;
 }
 
+.title__subsection{
+    font-weight: bold;
+}
+
 .title__bio, .title__subsection{
     margin:3px 7px;
     align-items: center;
@@ -160,7 +164,7 @@
     margin-right: 10px;
     margin-top: 5px;
     border: 3px solid;
-    width: 100px;
+    width: 28%;
     height: 140px;
     flex-grow: 1;
 }
@@ -272,7 +276,6 @@
 .formcontacto__imagen img{
     display: none;
     width: 170px;
-    border: 3px solid;
     margin-left: 15px;
 }
 
@@ -292,6 +295,7 @@
 .formcontacto__subtext{
     margin-top: 5px;
     font-size: 1.2em;
+    font-weight: bold;
 }
 
 .formcontacto__form{
@@ -327,6 +331,8 @@
     flex-direction: column;
     text-align: center;
     width: 100%;
+    font-weight: bold;
+    font-size: 150%;
     align-items: center;
     gap: 10px;
     height: 50px;
@@ -334,7 +340,9 @@
 }
 
 @media (min-width:768px) and (max-width:1024px){
-
+    .hobbies__box{
+        width: 20%;
+    }
 }
 
 @media (min-width:1025px){
@@ -350,17 +358,44 @@
     .menu__list__item__contacto{
         display: none;
     }
+    
+    .title__subsection{
+        align-items: start;
+    }
+
+    .hobbies__box{
+        width: auto;
+        padding-left: 8%;
+    }
+
 
     .experiencia__botao--repo:hover{
         transform: scale(1.2);
     }
 
-    .experience__botao--demo{
+    .experience__botao--demo:hover{
         transform: scale(1.2);
+    }
+
+    .formcontacto{
+        height: 400px;
     }
 
     .formcontacto__buton:hover{
         background: darkorange;
         transform: scale(1.2);
+    }
+    .formcontacto__imagen img{
+        display: block;
+        position: absolute;
+        top: 1870px;
+        left: 400px;
+        width: 15%;
+    }
+
+    .formcontacto__text{
+        position:absolute;
+        right: 200px;
+        top: 1800px;
     }
 }
