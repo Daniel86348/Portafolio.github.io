@@ -44,19 +44,25 @@
     gap: 10px;
 }
 
+.title__profile{
+    display: none;
+    height: 120px;
+}
+
 .title__bio{
     color: #464646;
     font-weight: bolder;
     font-size: 25px;
 }
 
-.title__subsection{
-    font-weight: bold;
-}
-
 .title__bio, .title__subsection{
     margin:3px 7px;
     align-items: center;
+}
+
+.title__subsection{
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .title__network{
@@ -92,6 +98,12 @@
     font-weight: bolder;
     font-size: 25px;
     text-align: center;
+}
+
+.about__paragraph{
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-left: 3%;
 }
 
 /*Skills*/
@@ -357,6 +369,13 @@
 
     .menu__list__item__contacto{
         display: none;
+    }
+
+    .title__profile{
+        display: flex;
+        position: absolute;
+        right: 300px;
+        top: 70px;
     }
     
     .title__subsection{
